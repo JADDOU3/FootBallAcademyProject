@@ -1,0 +1,112 @@
+.manhaj {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 5rem;
+  transform: translate(-50%, -50%);
+}
+
+.BackgroundBoxes {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  background-color: #ffffff ;
+}
+
+.fourBoxes {
+  margin-top: 150px;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff ;
+}
+
+.Box1, .Box2 {
+  background-color: #6ac098;
+  color: #ffffff;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-size: large;
+  box-shadow: 0 4px 10px rgba(37, 37, 37, 0.6); 
+}
+
+.Box1:hover{
+  transform: scale(1.02);
+  background-color: #5a9f7a;
+}
+.Box1 {
+  height: 100px;
+  width: 275px;
+  margin-top: 0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.Box2 {
+  height: 70px;
+  width: 135px;
+}
+
+.gridBoxes {
+  background-color: #d9eddf ;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 40px;
+  justify-items: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(80, 80, 80, 0.6); 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+
+p.ageRangeText {
+  color: #6ac098 ;
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.content {
+  display: none;
+  margin-top: 500px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.content.fade-in {
+  opacity: 1;
+}
+
+.content.active {
+  display: block;
+  text-align: center;
+  z-index: 3;
+}
+.special {
+  
+  display: flexbox;
+  padding-top: 120px;
+  margin-top: 800px; /* Add space between the .AC-message and this text */
+  font-size: 1.7rem; /* Slightly increase font size for visibility */
+  color: #6ac098; /* Adjust color to contrast the background */
+  text-align: center; /* Center the text */
+  direction: rtl; /* Proper Arabic alignment */
+}

@@ -1,0 +1,423 @@
+nav span {
+    text-decoration: none;
+    color: rgb(226, 241, 231);
+    margin: 0 10px;
+    font-size: x-large;
+}
+@keyframes navSlider {
+    from {
+        top: -50px; 
+    }
+    to {
+        top: 1%; 
+    }
+}
+
+.navstyle {   
+    position: fixed; 
+    top: -50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: inline-block; 
+    white-space: nowrap; 
+    background: rgba(56, 75, 65, 0.8); 
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    z-index: 1000; 
+    animation: navSlider 0.8s ease-out 0.5s forwards;
+    direction: rtl;
+}
+
+body, html {
+
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Ensures the menu is centered */
+}
+
+.Background {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+.new-section {
+    background-color: #ffffff;
+    width: auto;
+    color: #6ac098;
+    padding: 30px; 
+    text-align: right;   
+    direction: rtl; /* Ensure list bullets are on the right side */
+    height: 500px;
+}
+.new-section-text {
+    padding-right: 50px;
+     padding-bottom: 15px;
+      font-size: 120%;
+}
+.container {
+    background-color: #f0faf5;
+    display: flex;
+    margin-left: 50px;
+    border-radius: 20px;
+    margin-right: 50px;
+    color: #6ac098;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center all items horizontally */
+    text-align: center; /* Center align text for h1 and p */
+    gap: 50px; /* Space between the h1, p, and images */
+    padding: 30px; /* Add padding around the container */
+    height: 500px;
+}
+.circuler-image1,.circuler-image2
+ {
+    border-radius: 50%;
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; /* Ensures the image fills the circle properly */
+   z-index: 1;
+}
+.circuler-image1 {
+    margin-left: 25%;
+}
+.circuler-image2 {
+    margin-right: 25%;
+}
+.images {
+    padding-top: 300px;
+    display: flex;
+    justify-content: center; /* Center images */
+    gap: 500px; /* Add space between the images */
+    position: absolute ; /* Positioning the images within the box */
+    
+}
+.container h1 {
+    font-size: 2rem; /* Adjust heading size */
+    margin: 0; /* Remove default margin */
+}
+.container p {
+    font-size: 1rem; /* Adjust paragraph size */
+    line-height: 1.6; /* Improve line spacing for readability */
+    max-width: 600px; /* Optional: Limit the width of the paragraph */
+    margin: 0; /* Remove default margin */
+}
+.box-images {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center; /* Center the box images horizontally */
+    gap: 25px; /* Space between the box images */
+    width: 100%; /* Ensure the parent flex container spans the full width */
+    
+    border-radius: 20px;
+}
+
+.after-coachs {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center the entire content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 120vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: white;    /* Optional background for visibility */
+}
+
+.AC-message {
+    transform: translateY(-40px);
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center the entire content vertically */
+    align-items: center; /* Center content horizontally */
+    margin-top: 0px;
+    width: 900px;
+    height: 250px;
+    background-color: #d9eddf;
+    color: #6ac098;
+    box-shadow: 0 4px 10px rgba(56, 56, 56, 0.6);
+    border-radius: 10px;
+    padding: 40px; /* Add space inside the box */
+    direction: rtl; /* Proper alignment for Arabic */
+    text-align: center; /* Center text horizontally */
+    z-index: 1;
+}
+
+.AC-message h1 {
+    margin: 0; /* Remove margin around the heading */
+    font-size: 2rem; /* Adjust the heading size */
+    font-weight: bold; /* Ensure the font is bold */
+    line-height: 1.5; /* Proper line spacing for the heading */
+}
+
+.AC-message p {
+    margin-top: 20px; /* Add space between heading and paragraph */
+    line-height: 1.8; /* Improve readability */
+    font-size: 1rem; /* Adjust the font size */
+    text-align: center; /* Optional for better Arabic alignment */
+}
+
+.after-coachs h1.special {
+    padding-top: 120px;
+    margin-top: 20px; /* Add space between the .AC-message and this text */
+    font-size: 1.7rem; /* Slightly increase font size for visibility */
+    color: #6ac098; /* Adjust color to contrast the background */
+    text-align: center; /* Center the text */
+    direction: rtl; /* Proper Arabic alignment */
+    
+}
+.button {
+    background-color: #6ac098;
+    color: white;
+    width: 90px;
+    height: 40px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(56, 56, 56, 0.6);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.02);
+    background-color: #5a9f7a;
+}
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Initial hidden state for animation */
+.animate-from-below {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+.animate-in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #38664d;;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+footer h3 {
+    margin-bottom: 20px;
+}
+footer .social-icons {
+    margin: 20px 0;
+}
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+footer .columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 30px;
+}
+footer .column {
+    max-width: 300px;
+}
+footer .column h4 {
+    margin-bottom: 15px;
+}
+footer .column ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer .column ul li {
+    margin: 8px 0;
+}
+footer .column ul li a {
+    color: rgb(194, 194, 194);
+    text-decoration: none;
+}
+footer .column ul li a:hover {
+    text-decoration: underline;
+}
+footer .bottom {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.styleadjust{
+    background-color:   #38664d;
+
+}
+
+/* Dropdown container */
+.dropdown {
+    display: none;
+    position: relative;
+    margin: 0 10px;
+    
+}
+
+/* Dropdown content */
+.dropdown-content {
+    direction: ltr;
+    display: block;
+    position: absolute;
+    background-color: #38664d; /* Background color */
+    min-width: 160px;
+    z-index: 1;
+    top: 30px; /* Adjusted to be lower */
+    left: 0;
+    opacity: 0;
+    transform: translateY(-30px); /* Start position above */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* On hover, animate dropdown */
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    transform: translateY(0); /* Drops to its final position */
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    display: flex;
+    align-items: center;  /* Align the icon and text vertically */
+    gap: 20px;  /* Add space between the icon and the text */
+    color: white; /* Text color */
+    padding: 12px 26px;
+    text-decoration: none;
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.2s ease, color 0.2s ease; /* Smooth hover effect */
+}
+
+/* Hover effect on dropdown links */
+.dropdown-content a:hover {
+    background-color: #6ac098; /* Background color on hover */
+    color: white; /* Text color on hover */
+    border-radius: 5px; /* Rounded corners for the links */
+}
+
+/* Adding a subtle hover effect for the dropdown container */
+.dropdown:hover {
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.dropdown-content a i {
+    margin-right: 10px; /* Space between icon and text */
+    transition: transform 0.3s ease-in-out; /* Transition for the animation */
+}
+
+/* Ringing effect on hover */
+.dropdown-content a:hover i {
+    animation: ring 0.5s ease-in-out 1; /* Apply the animation */
+}
+
+/* Define the ringing animation */
+@keyframes ring {
+    0% {
+        transform: rotate(0deg); /* Initial position */
+    }
+    25% {
+        transform: rotate(10deg); /* Small rotation to the right */
+    }
+    50% {
+        transform: rotate(-10deg); /* Small rotation to the left */
+    }
+    75% {
+        transform: rotate(5deg); /* Small rotation to the right again */
+    }
+    100% {
+        transform: rotate(0deg); /* Return to the initial position */
+    }
+}
+
+/* Hover effect on dropdown links */
+.dropdown-content a:hover {
+    background-color: #6ac098; /* Background color on hover */
+    color: white; /* Text color on hover */
+    border-radius: 5px; /* Rounded corners for the links */
+}
+
+.box-image {
+    width: 300px;
+    height: 180px;
+    background-color: rgba(217, 237, 223,0.6);  
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(56, 56, 56, 0.6);
+    color: #6ac098;
+    position: relative; /* Establish positioning context */
+    text-align: center; /* Center text inside the box */
+    display: flex;
+    align-items: center; /* Vertically center the content inside the box */
+    justify-content: center; /* Horizontally center the content inside the box */
+}
+
+/* Notification Badge */
+.notification-badge {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

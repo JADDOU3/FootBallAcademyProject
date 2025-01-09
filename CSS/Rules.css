@@ -1,0 +1,68 @@
+/* General text alignment and font styling for Arabic content */
+.rules-css p, li, ol p {
+    margin: 20px;
+    text-align: right;
+    direction: rtl;
+    font-family: "Cairo", "Arial", sans-serif; /* A more modern, readable font */
+    color: #333; /* Dark gray for readability */
+    line-height: 1.8; /* Improves readability with line spacing */
+    font-size: 18px; /* Larger font for better visibility */
+}
+
+/* General styling for list items */
+.rules-css li {
+    list-style-position: inside;
+    padding-top: 15px;
+    padding-right: 20px;
+    font-size: 16px; /* Standardized font size for list items */
+    color: #444; /* Slightly lighter gray for contrast */
+    word-wrap: break-word; /* Ensures long text breaks properly */
+    overflow: visible; /* Allow content to be fully visible */
+}
+
+/* Styling for top-level ordered list (ol) items */
+.rules-css ol > li {
+    background-color: #d9eddf; /* Light blue background */
+    padding: 15px 10px; /* Balanced padding for a clean look */
+    border-radius: 8px; /* Smooth rounded edges */
+    margin-bottom: 15px; /* Space between main list items */
+    text-decoration: underline;
+    font-weight: bold;
+    color: #6ac098; /* Bold blue color for emphasis */
+    font-size: 20px; /* Larger font size for main headings */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+    word-wrap: break-word; /* Prevent horizontal scrolling */
+}
+
+/* Sub-list (ul) styles */
+.rules-css ul {
+    list-style-type: disc; /* Bullet points for sub-lists */
+    padding-right: 40px; /* Indentation for sub-lists */
+    margin-top: 10px;
+}
+
+.rules-css ul > li {
+    font-size: 16px; /* Font size for sub-list items */
+    color: #555; /* Softer color for sub-items */
+    margin-bottom: 10px; /* Space between sub-items */
+    line-height: 1.6;
+    word-wrap: break-word; /* Ensure long words break correctly */
+}
+
+/* Highlighted span for date */
+.rules-css span {
+    font-weight: bold;
+    color: #d32f2f; /* Distinct red tone for emphasis */
+    font-size: 18px; /* Adjusted size for better visibility */
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+    ol > li, ul > li {
+        font-size: 14px; /* Smaller font size for compact screens */
+        padding-right: 15px; /* Reduced padding for smaller devices */
+    }
+    span {
+        font-size: 16px; /* Adjust date span size for mobile */
+    }
+}

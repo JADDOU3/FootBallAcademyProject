@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FootBall Academy</title>
+    <link rel="stylesheet" href="../CSS/Manhaj.css">
+    <link rel="stylesheet" href="../CSS/master.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="../JavaScript/Manhaj.js">
+    </script>
+
+    <script src="../JavaScript/NavigateTosignupButton.js">
+    </script>
+
+<script src="../JavaScript/AnimateFromBelow.js">
+    
+</script>
+<script src="../JavaScript/notifications.js"></script>
+</head>
+<body>
+    <img src="../images/metodologia2.jpg" alt="Background image" class="Background" style="z-index: 0.5;">
+    <nav class="navstyle">
+        <a href="../html/index.html" style="text-decoration: none; color: blanchedalmond; margin: 0 10px;">
+            <span>الصفحة الرئيسية</span> 
+        </a> 
+        <a href="../html/academy.html" style="text-decoration: none; color: blanchedalmond; margin: 0 10px;">
+            <span>الأكاديمية</span>
+        </a> 
+        <a href="../html/Manhaj.html" style="text-decoration: none; color: blanchedalmond; margin: 0 10px;">
+            <span>المنهج</span>
+        </a> 
+        <a href="../html/Rules.html" style="text-decoration: none; color: blanchedalmond; margin: 0 10px;">
+            <span>الشروط والأحكام</span>
+        </a> 
+        <a href="../PHP/Contact.php" style="text-decoration: none; color: blanchedalmond; margin: 0 10px;">
+            <span>تواصل معنا</span>
+        </a> 
+        <a href="../html/News.html" style="text-decoration: none; color: blanchedalmond; margin: 0 10px;">
+            <span>الأخبار</span>
+        </a> 
+        <a href="../PHP/SignUp.php" style="text-decoration: none; color: blanchedalmond; margin: 0 10px;">
+            <span>سجِّل الآن</span>
+        </a>
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+            <a href="#" style="text-decoration: none; color: blanchedalmond;">
+                <span>قائمة الخيارات</span>
+            </a>
+            <div class="dropdown-content">
+                <a href="#" id="notification-item">
+                    <i id="notification-bell" class="fa-solid fa-bell"></i>
+                    <span id="notification-count" class="notification-badge">0</span> الاشعارات
+                </a>
+                <a href="#" onclick="logout()"><i id="logout" class="fa-solid fa-right-from-bracket"></i>تسجيل الخروج</a>
+            </div>
+        </div>
+    </nav>
+      <div>
+        <p class="manhaj">المنهج</p>
+      </div>
+      <div class="BackgroundBoxes animate-from-below">
+        <div class="fourBoxes">
+            <button class="Box1" onclick="showContent('content1')">15 - 17</button>
+            <button class="Box1" onclick="showContent('content2')">13 - 14</button>
+            <button class="Box1" onclick="showContent('content3')">10 - 12</button>
+            <button class="Box1" onclick="showContent('content4')">7 - 9</button>
+        </div>
+        <div id="content1" class="content active">
+            <div><p class="ageRangeText">الفئة العمرية من سن 15 حتى 17 سنة</p></div>
+            <div class="gridBoxes">    
+                <div class="Box2">التكتل الدفاعي في الثلث الأخير</div>
+                <div class="Box2">تغيير اللعب للمنطقة الغير مرئية</div>
+                <div class="Box2">البناء من الخلف ضد الضغط العالي</div>
+                <div class="Box2">التحول للهجوم (الهجوم المرتد)</div>
+                <div class="Box2">الهجوم من الممرات الخارجية</div>
+                <div class="Box2">الضغط العالي</div>
+                <div class="Box2">مقدمة في الضغط المتوسط</div>
+                <div class="Box2">تأخير اللعب كمبدأ دفاعي</div>
+                <div class="Box2">الضغط والتغطية الدفاعية في الثلث الأخير</div>
+                <div class="Box2">الاختراق الهجومي في الثلث الأخير</div>
+                <div class="Box2">الدعم الهجومي</div>
+                <div class="Box2">الإبداع في الهجوم</div>
+                <div class="Box2">القوة الانفجارية</div>
+                <div class="Box2">مقاومة السرعة</div>
+                <div class="Box2">القوة الهوائية</div>
+                <div class="Box2">التصعيد الهجومي</div>
+                <div class="Box2">الانتقال في الهجوم</div>
+                <div class="Box2">مقدمة في الضغط العكسي</div>
+                <div class="Box2">التغلب على الضغط</div>
+                <div class="Box2">تماسك الفريق</div>
+                <div class="Box2">نظام التغذية اليومي</div>
+                <div class="Box2">مساندة الزميل في الأوقات الجيدة والسيئة</div>
+                <div class="Box2">كيفية إيجاد اللاعب الحر</div>
+                <div class="Box2">سرعة الأداء</div>
+                <div class="Box2">التركيز</div>
+                <div class="Box2">التواصل</div>
+                <div class="Box2">الهجوم العرضي</div>
+                <div class="Box2">الاهتمام</div>
+                <div class="Box2">الثقة</div>
+                <div class="Box2">فكرة الرجل الثالث</div>
+            </div>
+        </div>
+        <div id="content2" class="content">
+            <div><p class="ageRangeText">الفئة العمرية من سن 13 حتى 14 سنة</p></div>
+        <div class="gridBoxes">           
+            <div class="Box2">التكتل في دفاع المنطقة</div>
+            <div class="Box2">تغيير منطقة الهجوم</div>
+            <div class="Box2">البناء من الخلف</div>
+            <div class="Box2">الضغط والتغطية في دفاع المنطقة</div>
+            <div class="Box2">الهجوم من الممرات الخارجية</div>
+            <div class="Box2">التعاون</div>
+
+            <div class="Box2">مقدمة في الهجوم المرتد</div>
+            <div class="Box2">الاختراق كمدفع هجومي</div>
+            <div class="Box2">مقدمة في الضغط العالي</div>
+            <div class="Box2">مقدمة في الإبداع الهجومي</div>
+            <div class="Box2">الدعم الهجومي</div>
+            <div class="Box2">الدوران بكفاءة</div>
+
+            <div class="Box2">اتخاذ القرار</div>
+            <div class="Box2">التكتل الدفاعي</div>
+            <div class="Box2">عقلية الانتصار</div>
+            <div class="Box2">الرؤية والوعي</div>
+            <div class="Box2">اللعب المتنوع</div>
+            <div class="Box2">مقدمة في التحول للدفاع</div>
+
+            <div class="Box2">التسارع والانتباه</div>
+            <div class="Box2">مراوغة الخصم</div>
+            <div class="Box2">المستوى الممتنع لنظام التغذية اليومي</div>
+            <div class="Box2">أنماط معقدة من التمريرات والاستلام</div>
+            <div class="Box2">التحكم بالكرة المستوى الثاني</div>
+            <div class="Box2">الهجوم الفردي</div>
+
+            <div class="Box2">الرشاقة</div>
+            <div class="Box2">التوافق</div>
+            <div class="Box2">النظام اللاهوائي</div>
+            <div class="Box2">التحمل</div>
+            <div class="Box2">الدفاع الفردي</div>
+            <div class="Box2">حل المشاكل</div>
+            </div>
+        </div>
+        <div id="content3" class="content">
+            <div><p class="ageRangeText" >الفئة العمرية من سن 10 حتى 12 سنة</p></div>
+            <div class="gridBoxes">
+                <div class="Box2">التفاعل</div>
+                <div class="Box2">الثقة</div>
+                <div class="Box2">البناء من الخلف</div>
+                <div class="Box2">الاستماع</div>
+                <div class="Box2">التسديد</div>
+                <div class="Box2">التعاون</div>
+                
+                <div class="Box2">الدفاع</div>
+                <div class="Box2">التحكم بالكرة</div>
+                <div class="Box2">مساعدة الآخرين</div>
+                <div class="Box2">عقلية التسديد</div>
+                <div class="Box2">الاستلام</div>
+                <div class="Box2">التمرير</div>
+                
+                <div class="Box2">اتخاذ القرار</div>
+                <div class="Box2">الهجوم</div>
+                <div class="Box2">تغيير الاتجاه</div>
+                <div class="Box2">الدوران</div>
+                <div class="Box2">التواصل</div>
+                <div class="Box2">التحول</div>
+                
+                <div class="Box2">كسر</div>
+                <div class="Box2">الجري بالكرة</div>
+                <div class="Box2">السرعة</div>
+                <div class="Box2">التوازن</div>
+                <div class="Box2">الرشاقة</div>
+                <div class="Box2">خطوط الضغط</div>
+                
+                <div class="Box2">التحكم بالنفس</div>
+                <div class="Box2">الاحتفال</div>
+                <div class="Box2">الوعي المكاني</div>
+                <div class="Box2">التسارع</div>
+                <div class="Box2">الأهداف الفردية</div>
+                <div class="Box2">حل المشاكل</div>
+                
+              
+            </div>
+        </div>
+        <div id="content4" class="content">
+            <div><p class="ageRangeText">الفئة العمرية من سن 7 حتى 9 سنوات</p></div>
+            <div class="gridBoxes">
+                <div class="Box2">مقدمة في الاختراق</div>
+                <div class="Box2">مقدمة في الانهاء</div>
+                <div class="Box2">مقدمة في الدفاع</div>
+                <div class="Box2">مقدمة في الهجوم</div>
+                <div class="Box2">مقدمة في التمرير</div>
+                <div class="Box2">مقدمة في الجري بالكرة</div>
+                
+                <div class="Box2">مقدمة في التفاعل مع الاصدقاء</div>
+                <div class="Box2">مقدمة في الاستلام</div>
+                <div class="Box2">مقدمة في الدوران</div>
+                <div class="Box2">الاستماع</div>
+                <div class="Box2">مقدمة في التحكم بالكرة</div>
+                <div class="Box2">مقدمة في البناء من الخلف</div>
+                
+                <div class="Box2">اتخاذ القرار</div>
+                <div class="Box2">الثقة</div>
+                <div class="Box2">السرعة</div>
+                <div class="Box2">تغيير الاتجاه</div>
+                <div class="Box2">التوازن</div>
+                <div class="Box2">الرشاقة</div>
+                
+                <div class="Box2">التحكم بالنفس</div>
+                <div class="Box2">الاحتفال</div>
+                <div class="Box2">الاهداف الفردية</div>
+                <div class="Box2">حل المشاكل</div>
+                <div class="Box2">التغذية</div>
+                <div class="Box2">التواصل</div>
+                
+                <div class="Box2">مقدمة في التخطيط</div>
+                <div class="Box2">مقدمة في القيادة</div>
+                <div class="Box2">مقدمة في الابداع</div>
+                <div class="Box2">مقدمة في العمل الجماعي</div>
+                <div class="Box2">مقدمة في التنظيم</div>
+                <div class="Box2">مقدمة في احترام الذات</div>
+            </div>
+        </div>       
+        
+    </div>
+    <h1 class="special animate-from-below">!!كن جزءا من فريقنا!!</h1>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <button class="button animate-from-below" onclick="navigateToSignUpForm()">سجّل الان</button>
+        </div>  
+
+
+        <div class="styleadjust">
+            <footer class="onlyForAnimation animate-from-below">
+                <h3>ابقى على اطلاع بأخر التحديثات</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <h4>روابط</h4>
+                        <ul>
+                            <li><a href="../html/index.html">الصفحة الرئيسية</a></li>
+                            <li><a href="../html/Manhaj.html">المنهج</a></li>
+                            <li><a href="../html/academy.html">الأكاديمية</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>مصادر</h4>
+                        <ul>
+                            <li><a href="../html/News.html">الأخبار</a></li>
+                            <li><a href="../PHP/Contact.php">تواصل معنا</a></li>
+                            <li><a href="../PHP/SignUp.php">سجل الآن</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>جهات الاتصال</h4>
+                        <p style="color: rgb(194, 194, 194);">رفيديا, نابلس</p>
+                        <p style="color: rgb(194, 194, 194);">055 000 0000</p>
+                        <p style="color: rgb(194, 194, 194);">050 000 0000</p>
+                        <p><a href="mailto:test@gmail.com" style="color: white;">test@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    حقوق النشر © 2025. جميع الحقوق محفوظة. رفيديا, نابلس<br>
+                    طورت بواسطة أكاديمية الكابتن
+                </div>
+            </footer>
+        </div>
+</body>
+</html>
