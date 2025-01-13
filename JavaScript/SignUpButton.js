@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const phoneRegex = /^0\d{9}$/;
 
     submitButton.addEventListener("click", () => {
-        // Collect form data
         const formData = {
             fullName: document.getElementById("fName").value,
             email: document.getElementById("email").value,
